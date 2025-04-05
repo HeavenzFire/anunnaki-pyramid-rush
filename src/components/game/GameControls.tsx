@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { Button } from "@/components/ui/button";
-import { useGame } from '@../../contexts/GameContext';
+import { useGame } from '@/contexts/GameContext';
 import { Play, RefreshCw } from 'lucide-react';
 
 const GameControls: React.FC = () => {
