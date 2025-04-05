@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,7 +62,16 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
-				}
+				},
+				// Custom game colors
+				sand: '#E2C391',
+				sandDark: '#C4A775',
+				gold: '#FFD700',
+				pyramid: '#D4A76A',
+				atlantis: '#4DB6AC',
+				lemuria: '#8E24AA',
+				anunnaki: '#B71C1C',
+				hieroglyph: '#7C4700',
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
@@ -84,11 +94,28 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'float': {
+					'0%, 100%': { transform: 'translateY(0)' },
+					'50%': { transform: 'translateY(-10px)' }
+				},
+				'enemy-walk': {
+					'0%': { transform: 'translateX(0)' },
+					'50%': { transform: 'translateX(100px)' },
+					'100%': { transform: 'translateX(0)' }
+				},
+				'shine': {
+					'0%': { opacity: '0.5' },
+					'50%': { opacity: '1' },
+					'100%': { opacity: '0.5' }
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'float': 'float 3s ease-in-out infinite',
+				'enemy-walk': 'enemy-walk 4s ease-in-out infinite',
+				'shine': 'shine 2s ease-in-out infinite'
 			}
 		}
 	},
